@@ -33,12 +33,14 @@ st.subheader("Currencies low")
 fig1 = px.bar(df, 'Year', 'Low', title="currencies graph for low")
 st.plotly_chart(fig1, use_container_width=True)
 
+st.subheader("Currencies volume")
+fig1 = px.bar(df,'Year','Volume', title="currencies graph for volume")
+st.plotly_chart(fig1, use_container_width=True)
+
+
 st.subheader("Currencies ytd gains")
 fig1 = px.line(df,'year','YTD Gains', title="currencies graph for ytd gains")
 st.plotly_chart(fig1, use_container_width=True)
 
-st.subheader("Currencies volume")
-fig1 = px.line(df,'Year','Volume', title="currencies graph for volume")
-st.plotly_chart(fig1, use_container_width=True)
 
 

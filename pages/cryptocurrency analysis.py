@@ -33,10 +33,15 @@ st.subheader("Cryptocurrencies low")
 fig1 = px.pie(df, 'Year', 'Low', title="cryptocurrencies graph for low")
 st.plotly_chart(fig1, use_container_width=True)
 
-st.subheader("Cryptocurrencies ytd gains")
-fig1 = px.line(df,'year','YTD Gains', title="cryptocurrencies graph for ytd gains")
+st.subheader("Cryptocurrencies volume")
+fig1 = px.pie(df,'Year','Volume', title="cryptocurrencies graph for volume")
 st.plotly_chart(fig1, use_container_width=True)
 
-st.subheader("Cryptocurrencies volume")
-fig1 = px.line(df,'Year','Volume', title="cryptocurrencies graph for volume")
+
+st.subheader("Cryptocurrencies year")
+fig1 = px.line(df,'year','Year', title="cryptocurrencies graph for year")
+st.plotly_chart(fig1, use_container_width=True)
+
+st.subheader("Cryptocurrencies ytd gains")
+fig1 = px.line(df,'Year','YTD Gains', title="cryptocurrencies graph for ytd gains")
 st.plotly_chart(fig1, use_container_width=True)
