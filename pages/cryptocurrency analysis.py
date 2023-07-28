@@ -39,9 +39,10 @@ st.plotly_chart(fig1, use_container_width=True)
 
 
 st.subheader("Cryptocurrencies year")
-fig1 = px.line(df,'year','Year', title="cryptocurrencies graph for year")
+year_count = df['Year'].value_counts()
+fig1 = px.bar(year_count,year_count.index,year_count.values, title="Year count")
 st.plotly_chart(fig1, use_container_width=True)
 
 st.subheader("Cryptocurrencies ytd gains")
-fig1 = px.line(df,'Year','YTD Gains', title="cryptocurrencies graph for ytd gains")
+fig1 = px.density_heatmap(df,'Year','YTD Gain', title="cryptocurrencies graph for ytd gains")
 st.plotly_chart(fig1, use_container_width=True)
