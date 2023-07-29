@@ -7,7 +7,7 @@ import os
 BASE_DIR = 'datasets/stocks/'
 files = os.listdir(BASE_DIR)
 files = [BASE_DIR+file for file in files]
-
+st.image('hero.jpg',use_column_width=True)
 st.title("Financial Portfolio Analysis..")
 
 stock = st.sidebar.radio('Select a stock', files)
