@@ -8,7 +8,7 @@ BASE_DIR = 'datasets/currencies/'
 files = os.listdir(BASE_DIR)
 files = [BASE_DIR+file for file in files]
 
-st.title("Financial portfolio analysis")
+st.title("Financial Portfolio Analysis...")
 
 currencies = st.sidebar.radio('Select a currencies', files)
 
