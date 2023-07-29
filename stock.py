@@ -8,7 +8,7 @@ BASE_DIR = 'datasets/stocks/'
 files = os.listdir(BASE_DIR)
 files = [BASE_DIR+file for file in files]
 
-st.title("Project title")
+st.title("Financial portfolio analysis..")
 
 stock = st.sidebar.radio('Select a stock', files)
 

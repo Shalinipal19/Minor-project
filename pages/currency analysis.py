@@ -8,7 +8,7 @@ BASE_DIR = 'datasets/currencies/'
 files = os.listdir(BASE_DIR)
 files = [BASE_DIR+file for file in files]
 
-st.title("Project title")
+st.title("Financial portfolio analysis")
 
 currencies = st.sidebar.radio('Select a currencies', files)
 
@@ -37,7 +37,7 @@ st.plotly_chart(fig1, use_container_width=True)
 
 
 st.subheader("Currencies ytd gains")
-fig1 = px.line(df,'Year','YTD Gain', title="currencies graph for ytd gains")
+fig1 = px.bar(df,'Year','YTD Gain', title="currencies graph for ytd gains")
 st.plotly_chart(fig1, use_container_width=True)
 
 
