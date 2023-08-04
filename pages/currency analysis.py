@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
-import plotly.express as px
+import plotly.express as px 
 import os
 
 BASE_DIR = 'datasets/currencies/'
